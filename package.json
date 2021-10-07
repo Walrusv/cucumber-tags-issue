@@ -1,0 +1,22 @@
+{
+  "name": "repo-issue",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "cucumber-js -f @cucumber/pretty-formatter --tags '@Create and @Smoke and not @Get' ",
+    "Create": "cucumber-js -f @cucumber/pretty-formatter --tags @Create ",
+    "Get": "cucumber-js -f @cucumber/pretty-formatter --tags @Get "
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@cucumber/cucumber": "^7.3.1",
+    "@cucumber/pretty-formatter": "^1.0.0-alpha.1",
+    "pactum": "^3.0.20"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
+}
